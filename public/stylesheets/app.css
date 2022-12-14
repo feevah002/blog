@@ -1,0 +1,50 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(98,199,28,1) 0%, rgba(0,150,255,1) 100%);
+}
+.field{
+  filter: drop-shadow(0.20rem 0.20rem 0.2rem rgba(0, 0, 0, 0.25));
+}
+.button{
+  filter: drop-shadow(0.20rem 0.20rem 0.2rem rgba(0, 0, 0, 0.25));
+}
+.main.text.segment{
+  filter: drop-shadow(0.15rem 0.15rem 0.2rem rgba(0, 0, 0, 0.25));
+}
+#square{
+    border-radius: 0px
+}
+#overall{
+    padding-bottom  :2.0em;
+}
+#del{
+    display: inline;
+    /*float:right;*/
+}
+#d{
+    color: grey;
+}
+img{
+    width: 100%;
+}
+#ff{
+  border-radius: 0.3125em;
+}
+#hhh{
+    font-family: "nabla";
+    font-size: 2.5em;
+}
+#plusplus{
+ 
+   border-radius: 20px;
+   /*background-color: rgba(0,212,211,1);*/
+}
+div.ui.header{
+     filter: drop-shadow(0.25rem 0.25rem 0.2rem rgba(0, 0, 0, 0.25));
+}
+.ui.segments .segment, .ui.segment:hover{
+     filter: drop-shadow(0.30rem 0.30rem 0.2rem rgba(0, 0, 0, 0.30));
+}
+div.ui.left.floated.red.button{
+    width: 100% !important;
+}

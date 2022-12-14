@@ -1,0 +1,40 @@
+<%-include ("partials/header.ejs")%>
+
+
+<div class = "ui main text container">
+    <div class = "ui segment">
+        <div class="item">
+            <div class="">
+                <img id="ff" class="image" src="<%=friend.image%>">
+            </div>
+            <div class="content">
+                <a class="ui huge header"><%=friend.name%></a>
+                
+                <div id="d" class="meta">
+                  <span><i>Age: <%=friend.age%> years old</i></span>
+                  <p><i>Location: <%=friend["location"]%></i></p>
+                </div>
+                <p></p>
+                <div class="description">
+                    <p>Contact: <span id="d"> <%=friend.contact%></span></p>
+                    <span>About:</span>
+                  <p><%=friend.about%></p>
+                </div>
+                <P></P>
+                <div class="extra">
+                    <a class = "ui small orange basic button" href ="/friends/<%=friend._id%>/edit">Edit</a>
+                    
+                    <form  id="del" action="/friends/<%=friend._id%>?_method=DELETE" method="POST">
+                        <button class = "ui small red inverted button">Delete</button>
+                    </form>
+                </div>  <!--extra-->
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<%-include ("partials/footer.ejs")%>

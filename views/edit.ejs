@@ -1,0 +1,48 @@
+<%-include ("partials/header.ejs")%>
+
+<div class = "ui main text container">
+    <div class="ui header">
+            Add a new friend
+        </div>
+    <div class="ui main text segment">
+        
+        <form id="inin"class="ui form" action="/friends/<%=friend._id%>?_method=PUT" method="POST">
+            
+          <div class="field">
+            <label>Name</label>
+            <input type="text" name="friend[name]" placeholder="Name" value ="<%=friend.name%>">
+          </div>
+          
+          <div class="field">
+            <label>Image(URL)</label>
+            <input type="text" name="friend[image]" placeholder="image" value ="<%=friend.image%>">
+          </div>
+          
+          <div class="field">
+            <label>Age</label>
+            <input type="number" name="friend[age]" placeholder="Age" value ="<%=friend.age%>">
+          </div>
+          
+          <div class="field">
+            <label>Phone Number</label>
+            <input type="number" name="friend[contact]" placeholder="Phone Number" value ="<%=friend.contact%>">
+          </div>
+          
+          <div class="field">
+            <label>location</label>
+            <input type="text" name="friend[location]" placeholder="Location" value ="<%=friend.location%>">
+          </div>
+          
+          <div class="field">
+             <label>About</label>
+            <textarea type="text" name="friend[about]" rows="2"><%=friend.about%></textarea>
+          </div>
+         
+          <button class="ui button" type="submit">Update</button>
+          
+        </form>
+       
+    </div> <!--text container-->
+</div><!--mid-->
+
+<%-include ("partials/footer.ejs")%>

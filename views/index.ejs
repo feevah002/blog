@@ -1,0 +1,48 @@
+<%-include ("partials/header.ejs")%>
+
+
+<div class = "ui main text container ">
+    <div id="hhh"class= "ui header">
+        Friends List
+    </div>
+    <% friends.forEach(function(friend){%>
+        <div class = "ui segment">
+            <div class="ui items">
+            
+                <div class="item">
+                    <div class="image">
+                        <img class="image rounded" src="<%=friend.image%>">
+                    </div>
+                    <div class="content">
+                        <a class="header"><%=friend.name%></a>
+                        <div class="meta">
+                          <span><i><%=friend.age%> years old</i></span>
+                          <p><i>Location: <%=friend["location"]%></i></p>
+                        </div>
+                        
+                        <div class="description">
+                          <p><%=friend.about.substring(0,100)%>...</p>
+                        </div>
+                        
+                        <div class="extra">
+                          <a class="ui floated basic violet button" href = "/friends/<%=friend._id%>">
+                              Read more
+                              <i class ="right chevron icon"></i></a>
+                        </div>  <!--extra-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    <%  });   %>
+    <div>
+        <a href="friends/new/"id="plusplus"class=" ui purple button"><i class="plus icon"></i>Add Friend</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+<%-include ("partials/footer.ejs")%>
