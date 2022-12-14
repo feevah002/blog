@@ -1,5 +1,5 @@
 {
-  "name": "blogapp2",
+  "name": "blogapp",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -15,5 +15,14 @@
     "method-override": "^3.0.0",
     "mongodb": "^4.9.1",
     "mongoose": "^6.6.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feevah002/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/feevah002/blog/issues"
+  },
+  "homepage": "https://github.com/feevah002/blog#readme"
 }
